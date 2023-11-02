@@ -5,11 +5,12 @@ import Navbar from './Navbar'
 import Translation from './Translation'
 import Language from './Language'
 import switchImg from './switchImg.png'
+import image from './image.png'
 
 function App () {
   const [translation, setTranslation] = useState(
     {
-      translate: 'Siempre es buen momento para cantar, todo el mundo con las manos arriba y digan allelluja',
+      translate: '',
       translated: '',
       from: 'es',
       to: 'en'
@@ -35,7 +36,7 @@ function App () {
               })
             }}
             name='comments'
-            rows='6' cols='54'
+            rows='8' cols='60'
           />
         </div>
 
@@ -55,11 +56,6 @@ function App () {
         translation={translation}
         name='translated'
       />
-      <p className='colorWhite'>{translation.translate}</p>
-      <p className='colorWhite'>{translation.translated}</p>
-      <p className='colorWhite'>{translation.from}</p>
-      <p className='colorWhite'>{translation.to}</p>
-
     </div>
   )
 }
