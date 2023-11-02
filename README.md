@@ -1,1 +1,1 @@
-Translator App using Tailwind
+Translator App
